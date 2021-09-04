@@ -1,0 +1,60 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "toastr";
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #e5eff1;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+
+  img {
+    height: 100px;
+  }
+}
+
+h5 {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
+  margin: 0;
+}
+.todos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 8px 12px;
+    margin: 0px 0 12px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      cursor: pointer;
+      &.badge {
+        margin-left: 12px;
+        padding: 6px 8px;
+      }
+    }
+  }
+}
